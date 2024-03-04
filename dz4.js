@@ -2,8 +2,7 @@
 let num1 = +prompt("Введіть перше число:");
 let num2 = +prompt("Введіть друге число:");
 let value = (num1 > num2) ? 'Перше число більше' : 'Друге число більше';
-let message = value;
-console.log(message);
+console.log(value);
 //завдання 2
 let userMessage = prompt("Введіть повідомлення:")
 switch(userMessage){
@@ -21,43 +20,24 @@ switch(userMessage){
 let numberOfMonth = +prompt("Введіть номер місяця")
 switch(numberOfMonth){
     case 1:
-        console.log("January");
-        break;
-    case 2:
-        console.log("February");
+    case 2: 
+    case 12:            
+        console.log("Winter");
         break;
     case 3:
-        console.log("March");
-        break;
     case 4:
-        console.log("April");
-        break;
     case 5:
-        console.log("May");
+        console.log("Spring");
         break;
     case 6:
-        console.log("June");
-        break;
     case 7:
-        console.log("July");
-        break;
-    case 8:
-        console.log("August");
+    case 8:        
+        console.log("Summer");
         break;
     case 9:
-        console.log("September");
-        break;
     case 10:
-        console.log("October");
-        break;
     case 11:
-        console.log("November");
-        break;
-    case 12:
-        console.log("December");
-        break;
-    default:
-        console.log("Ви ввели неправильне число")
+        console.log("Autumn");
         break;
 }
 //завдання 4
@@ -81,16 +61,30 @@ while(iterationNumber < 5){
     numberForSum += +prompt("Введіть числа які бажаєте додати:");
     iterationNumber++;
 }
-console.log("Сума ващих чисел = " + numberForSum);
+console.log("Сума ваших чисел = " + numberForSum);
+//з циклом for
+let numberForSum1 = 0
+for(let i = 0; i < 5; i++){
+    numberForSum1 += +prompt("Введіть числа які бажаєте додати (2):");
+}
+console.log("Сума ваших чисел = " + numberForSum1);
 //завдання 2 
 let factorialNumber = +prompt("Введіть число для знаходження факторіалу: ");
 for(let i = factorialNumber - 1; i >= 1; --i){
     factorialNumber *= i;
 }
 console.log(factorialNumber);
+//з циклом while
+let factorialNumber1 = +prompt("Введіть число для знаходження факторіалу(2): ");
+let iterationNumber1 = factorialNumber1 - 1;
+while(iterationNumber1 >= 1){
+    factorialNumber1 *= iterationNumber1;
+    iterationNumber1--;
+}
+console.log(factorialNumber1);
 //завдання 3
 let quantityOfRowsWithStars = +prompt("Введіть к-ть рядків: ");
-let stars;
+let stars ="";
 for(let i = 1; i <= quantityOfRowsWithStars; i++){
     stars += "*";
     console.log(stars);
