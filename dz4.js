@@ -43,18 +43,39 @@ switch(numberOfMonth){
 //завдання 4
 for(let i = 0; i <= 10; i++){
     console.log(i);
-}//завдання 5 
+}//з циклом while
+let iterationNumberFourthExercise = 0;
+while(iterationNumberFourthExercise <= 10){
+    console.log(iterationNumberFourthExercise);
+    iterationNumberFourthExercise++;
+}
+//завдання 5 
 let diapasonBeginning = +prompt("Введіть початок діапазону: ");
 let diapasonEnding = +prompt("Введіть кінець діапазону: ");
 for(let i = diapasonBeginning; i <= diapasonEnding; i++){
     console.log(i);
+}//з циклом while
+let diapasonBeginningWhileLoop = +prompt("Введіть початок діапазону(2): ");
+let diapasonEndingWhileLoop = +prompt("Введіть кінець діапазону(2): ");
+let iterationNumberFifthExercise = diapasonBeginningWhileLoop;
+while(iterationNumberFifthExercise <= diapasonEndingWhileLoop){
+    console.log(iterationNumberFifthExercise);
+    iterationNumberFifthExercise++;
 }
 //завдання 6
 let three = 3;
 for(let i = 0; i <= 10; i++){
     console.log(`${three} помножити на ${i} = ${three * i}`);
 }
+//з циклом while
+let threeWhileLoop = 3;
+let iterationNumberSixthExercise = 0;
+while(iterationNumberSixthExercise <= 10){
+    console.log(`${threeWhileLoop} помножити на ${iterationNumberSixthExercise} = ${threeWhileLoop * iterationNumberSixthExercise}`);
+    iterationNumberSixthExercise++;
+}
 //рівень 2 
+//з циклом while
 let numberForSum = 0;
 let iterationNumber = 0;
 while(iterationNumber < 5){
@@ -69,6 +90,7 @@ for(let i = 0; i < 5; i++){
 }
 console.log("Сума ваших чисел = " + numberForSum1);
 //завдання 2 
+//з циклом for
 let factorialNumber = +prompt("Введіть число для знаходження факторіалу: ");
 for(let i = factorialNumber - 1; i >= 1; --i){
     factorialNumber *= i;
